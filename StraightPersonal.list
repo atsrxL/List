@@ -1,0 +1,12 @@
+# 内容：直连
+# 数量：
+DOMAIN-KEYWORD,qnap
+DOMAIN-KEYWORD,plex
+DOMAIN-KEYWORD,autodesk
+DOMAIN-SUFFIX,autodesk.com
+
+
+
+#USER-AGENT,*youtube*
+#DOMAIN,yt3.ggpht.com
+#DOMAIN-SUFFIX,googlevideo.com

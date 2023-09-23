@@ -1,0 +1,9 @@
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,10.20.30.0/24,no-resolve
+
+
+#IP-CIDR,10.20.30.2/32,no-resolve
+#IP-CIDR,10.20.30.3/32,no-resolve
+#IP-CIDR,10.20.30.4/32,no-resolve
+#IP-CIDR,10.20.30.100/32,no-resolve
+#IP-CIDR,10.20.30.101/32,no-resolve
