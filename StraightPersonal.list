@@ -6,11 +6,6 @@ DOMAIN-KEYWORD,autodesk
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,dirac
 
-# Dota2 Japan
-IP-CIDR,45.121.184.0/24,no-resolve
-
-# Dota2 Sg
-IP-CIDR,103.10.124.0/24,no-resolve
 
 
 #USER-AGENT,*youtube*
