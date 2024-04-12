@@ -1,5 +1,51 @@
-# Dota2 Japan
-IP-CIDR,45.121.184.0/24,no-resolve
+# All Dota2 server 
+# date 20240412
 
-# Dota2 SEA
-IP-CIDR,103.10.124.0/24,no-resolve
+# Japan
+IP-CIDR,45.121.184.5/32,no-resolve
+IP-CIDR,45.121.184.27/32,no-resolve
+# Singapore
+IP-CIDR,103.10.124.119/32,no-resolve
+# Hongkong
+IP-CIDR,103.28.54.163/32,no-resolve
+# South Korea
+IP-CIDR,146.66.152.41/32,no-resolve
+# Brazil
+IP-CIDR,155.133.227.51/32,no-resolve
+IP-CIDR,155.133.227.35/32,no-resolve
+# Chile
+IP-CIDR,155.133.249.163/32,no-resolve
+# Dubai
+IP-CIDR,185.25.183.163/32,no-resolve
+# Finland
+IP-CIDR,65.109.17.210/32,no-resolve
+# London
+IP-CIDR,162.254.196.82/32,no-resolve
+# South Africa
+IP-CIDR,155.133.238.178/32,no-resolve
+# Sweden
+IP-CIDR,155.133.252.37/32,no-resolve
+IP-CIDR,162.254.198.42/32,no-resolve
+# Sydney
+IP-CIDR,103.10.125.155/32,no-resolve
+# German
+IP-CIDR,155.133.226.68/32,no-resolve
+# US
+IP-CIDR,162.254.193.99/32,no-resolve
+IP-CIDR,205.196.6.212/32,no-resolve
+IP-CIDR,162.254.195.70/32,no-resolve
+IP-CIDR,173.237.51.204/32,no-resolve
+IP-CIDR,68.169.42.222/32,no-resolve
+IP-CIDR,162.213.192.58/32,no-resolve
+IP-CIDR,155.133.253.55/32,no-resolve
+IP-CIDR,162.254.199.167/32,no-resolve
+IP-CIDR,148.72.174.135/32,no-resolve
+IP-CIDR,23.251.100.186/32,no-resolve
+IP-CIDR,162.254.192.67/32,no-resolve
+IP-CIDR,74.201.228.148/32,no-resolve
+IP-CIDR,147.75.193.65/32,no-resolve
+# India
+IP-CIDR,155.133.225.18/32,no-resolve
+IP-CIDR,155.133.232.98/32,no-resolve
+IP-CIDR,155.133.224.21/32,no-resolve
+IP-CIDR,155.133.233.98/32,no-resolve
