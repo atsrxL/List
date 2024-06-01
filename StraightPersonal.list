@@ -6,6 +6,9 @@ DOMAIN-KEYWORD,autodesk
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,dirac
 
+# 小红书
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,xiaohongshu.com
 
 
 #USER-AGENT,*youtube*
