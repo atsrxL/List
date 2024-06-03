@@ -16,5 +16,5 @@ Sub_info = script-name=Sub_info_fl,update-interval=3600
 Sub_info = script-name=Sub_info_aca,update-interval=3600
 
 [Script]
-Sub_info_fl = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/atsrxL/List/main/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Fsid%3D117755%26token%3DYWnSzzl7wNpB&reset_day=1&title=FL&icon=externaldrive.fill.badge.icloud=#007aff
-Sub_info_aca = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/atsrxL/List/main/Sub-info.js,script-update-interval=0,argument=url=https%3A%2F%2Fapi.acaisbest.shop%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3De378c3b7fbeafcb6c714851e30abdda5&reset_day=30&title=ACA&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info_fl = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/atsrxL/List/main/Sub-info.js,script-update-interval=0,argument=url=XXXXXX&reset_day=1&title=FL&icon=externaldrive.fill.badge.icloud=#007aff
+Sub_info_aca = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/atsrxL/List/main/Sub-info.js,script-update-interval=0,argument=url=XXXXXXXXX&reset_day=30&title=ACA&icon=externaldrive.fill.badge.icloud=#007aff
