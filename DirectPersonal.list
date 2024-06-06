@@ -1,16 +1,5 @@
-# 内容：直连
-# 数量：
 DOMAIN-KEYWORD,qnap
 DOMAIN-KEYWORD,plex
 DOMAIN-KEYWORD,autodesk
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,dirac
-
-# 小红书
-DOMAIN-SUFFIX,xhscdn.com
-DOMAIN-SUFFIX,xiaohongshu.com
-
-
-#USER-AGENT,*youtube*
-#DOMAIN,yt3.ggpht.com
-#DOMAIN-SUFFIX,googlevideo.com
