@@ -4,3 +4,6 @@ DOMAIN-KEYWORD,autodesk
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,dirac
 DOMAIN-SUFFIX,steamserver.net
+#steam direct connect download route
+DOMAIN-SUFFIX,manlaxy.com
+DOMAIN-SUFFIX,clngaa.com
