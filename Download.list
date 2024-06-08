@@ -8,6 +8,3 @@ URL-REGEX,(Subject|HELO|SMTP)
 URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
 # XunLei
 URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
-# 360
-URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
-
