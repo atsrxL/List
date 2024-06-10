@@ -1,0 +1,115 @@
+
+    {
+      name: 'Twitter',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Twitter/Twitter.list'
+    },
+
+      //指定流媒体
+    {
+      name: 'Netflix',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list'
+    },
+    {
+      name: 'PrimeVideo',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AmazonPrimeVideo/AmazonPrimeVideo.list'
+    },
+    {
+      name: 'Disney',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list'
+    },
+    {
+      name: 'Bahamut',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list'
+    },
+    {
+      name: 'TikTok',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list'
+    },
+    {
+      name: 'NeteaseMusic',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/NetEaseMusic/NetEaseMusic.list'
+    },
+    //地区流媒体
+
+    //通用流媒体
+    {
+      name: 'Bilibili',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list'
+    },
+    {
+      name: 'AppleTV',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleTV/AppleTV.list'
+    },
+
+    //网盘
+    {
+      name: '*GoogleDrive*',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GoogleDrive/GoogleDrive.list'
+    },
+        {
+      name: 'Game',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list'
+    },
+
+        {
+      name: 'PayPal',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list'
+    },
+
+        {
+      name: 'Xiaohongshu',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/XiaoHongShu/XiaoHongShu.list'
+    },
+
+        {
+      name: 'WeChat',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/WeChat/WeChat.list'
+    },
+
+
+    {
+      name: 'Weibo',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Weibo/Weibo.list'
+    },
+    {
+      name: 'AliPay',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/AliPay.list'
+    },
+    {
+      name: 'AlibabaA',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Alibaba/Alibaba.list'
+    },
+    {
+      name: 'AlibabaB',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Alibaba.list'
+    },
+    {
+      name: 'Tencent',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Tencent.list'
+    },
+    {
+      name: 'Sina',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Sina.list'
+    },
+    {
+      name: 'JingDong',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/JingDong.list'
+    },
+    {
+      name: 'Xiaomi',
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Xiaomi.list'
+    },
+    {
+      name: 'UnionPay',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/UnionPay/UnionPay.list'
+    },
+
+
+        {
+      name: 'Microsoft',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list'
+    },
+    {
+      name: 'Apple',
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list'
+    },
