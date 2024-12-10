@@ -1,6 +1,6 @@
 # Netease UU
 DOMAIN,unipush.x.netease.com
-# IP-CIDR,35.221.78.22
+IP-CIDR,35.221.78.22
 DOMAIN-SUFFIX,163.com
 DOMAIN-SUFFIX,netease.com
 DEST-PORT,2081-2200
