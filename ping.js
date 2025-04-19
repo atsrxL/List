@@ -1,6 +1,6 @@
 // 策略组和节点配置
-const GROUP_NAME = "Mesh";
-const NODES = ["Direct", "SS61121", "DEVICE:MACMINI"];
+const GROUP_NAME = "Intranet";
+const NODES = ["Direct", "SS61121", "DEVICE:MACMINI", "DEVICE:M4"];
 const PING_TARGET = "192.168.123.99";
 const PING_INTERVAL = 10; // 秒
 
