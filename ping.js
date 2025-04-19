@@ -1,6 +1,6 @@
 // 策略组和节点配置
 const GROUP_NAME = "Intranet";
-const NODES = ["Direct", "SS61121", "DEVICE:MACMINI", "DEVICE:M4"];
+const NODES = ["DEVICE:MACMINI", "DIRECT", "SS61121", "DEVICE:M4"]; // 按照你策略组中的顺序
 const PING_TARGET = "192.168.123.99";
 const PING_INTERVAL = 10; // 秒
 
@@ -11,10 +11,14 @@ let currentNodeIndex = 0;
 const savedIndex = $persistentStore.read("currentNodeIndex");
 if (savedIndex !== null) {
     currentNodeIndex = parseInt(savedIndex);
+    console.log(`Restored node index: ${currentNodeIndex} (${NODES[currentNodeIndex]})`);
+} else {
+    console.log(`Using default node: ${NODES[currentNodeIndex]}`);
 }
 
 // 测试连接
 async function testConnection() {
+    console.log(`Testing connection to ${PING_TARGET}...`);
     return new Promise((resolve) => {
         $httpClient.get({
             url: `http://${PING_TARGET}`,
@@ -24,7 +28,7 @@ async function testConnection() {
                 console.log(`Ping ${PING_TARGET} failed: ${error}`);
                 resolve(false);
             } else {
-                console.log(`Ping ${PING_TARGET} successful`);
+                console.log(`Ping ${PING_TARGET} successful with status: ${response.status}`);
                 resolve(true);
             }
         });
@@ -34,6 +38,7 @@ async function testConnection() {
 // 切换到下一个节点
 async function switchToNextNode() {
     // 计算下一个节点索引
+    const oldNodeIndex = currentNodeIndex;
     currentNodeIndex = (currentNodeIndex + 1) % NODES.length;
     
     // 保存当前节点索引到持久化存储
@@ -41,30 +46,53 @@ async function switchToNextNode() {
     
     // 选择新节点
     const nextNode = NODES[currentNodeIndex];
-    console.log(`Switching to node: ${nextNode}`);
+    console.log(`Switching from ${NODES[oldNodeIndex]} to ${nextNode}`);
     
     // 调用 Surge HTTP API 切换节点
-    $httpAPI("POST", `/policy_groups/${encodeURIComponent(GROUP_NAME)}`, {
-        policy: nextNode
-    }, function(result) {
-        if (result.error) {
-            console.log(`Failed to switch node: ${result.error}`);
-        } else {
-            console.log(`Successfully switched to ${nextNode}`);
-        }
-    });
+    try {
+        // 使用直接的方式设置策略
+        $surge.setSelectGroupPolicy(GROUP_NAME, nextNode);
+        console.log(`Policy change command sent for ${GROUP_NAME} to ${nextNode}`);
+        
+        // 备用方法 - 如果上面的方法不工作，可以取消注释这个
+        /*
+        $httpAPI("POST", "policies", {
+            "group_name": GROUP_NAME,
+            "policy": nextNode
+        }, function(result) {
+            console.log(`API result: ${JSON.stringify(result)}`);
+            if (result.error) {
+                console.log(`Failed to switch node: ${result.error}`);
+            } else {
+                console.log(`Successfully switched to ${nextNode}`);
+            }
+        });
+        */
+    } catch (e) {
+        console.log(`Error during policy switch: ${e.message}`);
+    }
 }
 
 // 主逻辑
 async function main() {
-    const isConnected = await testConnection();
-    
-    if (!isConnected) {
-        await switchToNextNode();
-    } else {
-        console.log(`Connection is good, staying with current node: ${NODES[currentNodeIndex]}`);
+    console.log("==== INTRANET PING CHECK SCRIPT STARTED ====");
+    try {
+        // 获取当前选中的策略
+        const currentPolicy = $surge.selectGroupPolicy(GROUP_NAME);
+        console.log(`Current policy for ${GROUP_NAME} is: ${currentPolicy}`);
+        
+        const isConnected = await testConnection();
+        
+        if (!isConnected) {
+            await switchToNextNode();
+        } else {
+            console.log(`Connection is good, staying with current node: ${NODES[currentNodeIndex]}`);
+        }
+    } catch (e) {
+        console.log(`Script error: ${e.message}`);
     }
     
+    console.log("==== INTRANET PING CHECK SCRIPT ENDED ====");
     $done();
 }
 
