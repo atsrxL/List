@@ -7,7 +7,6 @@ const timeoutSeconds = 2; // 超时设置为2秒
 let currentNode = $surge.selectGroupDetails().decisions[policyGroupName];
 let allNodes = $surge.selectGroupDetails().groups[policyGroupName];
 
-// 使用ping命令检测目标IP是否可达
 $httpClient.get({
   url: `http://${targetIP}`,
   timeout: timeoutSeconds * 1000 // 转换为毫秒
@@ -23,7 +22,7 @@ $httpClient.get({
     // 实际执行切换操作
     $surge.setSelectGroupPolicy(policyGroupName, nextNode);
     
-    console.log(`已切换到下一个节点: ${nextNode}`);
+    console.log(`已切换到节点: ${nextNode}`);
     $done();
   } else {
     console.log(`${targetIP} 可达，保持当前节点: ${currentNode}`);
