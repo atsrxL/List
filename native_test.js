@@ -4,7 +4,7 @@
 
 // --- 配置区域 ---
 const policyGroupName = "Intranet"; // 需要触发测速的策略组名称
-const delayMs = 5000;               // 延迟时间 (毫秒)
+const delayMs = 2000;               // 延迟时间 (毫秒)
 // ----------------
 
 (function main() {
