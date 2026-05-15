@@ -5,7 +5,7 @@
 //
 // Surge scripting can call Surge HTTP APIs through $httpAPI without X-Key.
 
-const INITIAL_DELAY_MS = 1500;
+const INITIAL_DELAY_MS = 5000;
 const VERIFY_DELAY_MS = 300;
 const RETRY_DELAY_MS = 1000;
 const MAX_ATTEMPTS = 12;
