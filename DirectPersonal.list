@@ -6,11 +6,7 @@ DOMAIN-KEYWORD,plex.direct
 DOMAIN-KEYWORD,autodesk
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,dirac
-DOMAIN-SUFFIX,steamserver.net
-#steam direct connect download route
-DOMAIN-SUFFIX,manlaxy.com
-DOMAIN-SUFFIX,clngaa.com
-DOMAIN-SUFFIX,pphimalayanrt.com
+
 #奉贤海贤能源充值
 #DOMAIN-SUFFIX,shfxg.com
 #DOMAIN-SUFFIX,cebbank.coms
@@ -25,3 +21,14 @@ DOMAIN-SUFFIX,huyuanyiyao.com
 DOMAIN-SUFFIX,argotunnel.com
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,tenclass.net
+
+# 通过代理连接steamserver.net,则下载路径为外服
+DOMAIN-SUFFIX,steamserver.net
+#steam direct connect download route
+DOMAIN-SUFFIX,manlaxy.com
+DOMAIN-SUFFIX,clngaa.com
+DOMAIN-SUFFIX,pphimalayanrt.com
+DOMAIN-SUFFIX,eccdnx.com
+
+DOMAIN,amazontyo.publicdouyin.men
+IP-CIDR,3.112.61.11/32
